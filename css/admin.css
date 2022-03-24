@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ad_head_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    background-color: rgb(151, 151, 151);
+}
+
+.ad_head_wrapper .ad_head_logo p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(58, 58, 58);
+    border-radius: 0.5rem;
+}
+
+.ad_head_wrapper .head_search_bar input[type='text'] {
+    position: relative;
+    width: 20rem;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    padding-left: 3rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.ad_head_wrapper .head_search_bar input[type='text']:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.ad_head_wrapper .head_search_bar i {
+    position: absolute;
+    z-index: 1;
+    font-size: 1.4rem;
+    margin: 0.6rem 1rem;
+    opacity: 0.8;
+}
+
+.ad_head_wrapper .ad_head_log a {
+    padding: 0.8rem 1rem;
+    border-radius: 0.2rem;
+    background-color: rgb(56, 59, 255);
+}
+
+.ad_head_wrapper .ad_head_log a:hover {
+    background-color: rgb(41, 43, 173);
+}
+
+/* ad_head.php */
+
+#user-option-drop {
+    background-color: rgb(97, 97, 97);
+    position: absolute;
+    margin-top: 0.8rem;
+    border-radius: 0.2rem;
+    width: 10rem;
+    overflow: hidden;
+    display: none;
+}
+
+#user-option-drop ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user-option-drop ul li {
+    padding: 0.8rem 0;
+    /* border-bottom: 1px solid rgb(184, 184, 184); */
+}
+
+#user-option-drop ul li:last-child {
+    border-bottom: none;
+}
+
+#user-option-drop ul li a {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#user-option-drop ul li a i {
+    padding-right: 0.5rem;
+}
+
+#user-option-drop ul li:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+/* search resutl.php */
+/* #search-result {
+    position: absolute;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem;
+    border-radius: 0.2rem;
+    background-color: rgb(70, 70, 70);
+    width: 330px;
+    overflow: hidden;
+
+}
+
+#search-result #result-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid rgb(32, 32, 32);
+    transition: all 0.1s ease;
+}
+
+#search-result a {
+    display: block;
+}
+
+#search-result a:hover #result-list {
+    background-color: rgb(32, 32, 32);
+}
+
+#search-result #result-list:last-child {
+    border-bottom: none;
+}
+
+#search-result #result-list .result-thumb {
+    width: 70px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+#search-result #result-list .result-thumb img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+#search-result #result-list .result-name h3 {
+    margin: 0 0rem;
+    width: 190px;
+    color: white;
+    font-weight: lighter;
+}
+
+#search-result #result-list h3 {
+    font-size: 1rem;
+    color: rgb(218, 218, 218);
+} */
+
+/* side bar */
+
+.side_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.side_main .side_bar_wrapper {
+    width: 10rem;
+    display: flex;
+    /* justify-content: center; */
+    padding: 0rem 0;
+    align-items: center;
+    height: 150vh;
+    /* position: fixed; */
+    flex-direction: column;
+    background-color: rgb(39, 39, 39);
+}
+
+.side_main .side_bar_wrapper a {
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    line-height: 4;
+}
+
+.side_main .side_bar_wrapper a i {
+    padding-right: 1rem;
+}
+
+.side_main .side_bar_wrapper a:nth-child(even) {
+    background-color: rgb(92, 92, 92);
+}
+
+.side_main .side_bar_wrapper a:hover {
+    background-color: black;
+}
+
+.side_main .side_bar_wrapper a:last-child {
+    border-bottom: none;
+}
+
+/* main container */
+.container {
+    padding: 1rem 1rem;
+}
+
+.container .data {
+    padding: 1rem 0;
+}
+
+.container .data table {
+    border-collapse: collapse;
+    color: white;
+    width: 100%;
+}
+
+.container .data table td,
+.container .data table th {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+.container .data table tr:hover {
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.container .data table tr:nth-child(odd) {
+    background-color: rgb(83, 83, 83);
+}
+
+.container .data table tr:nth-child(even) {
+    background-color: rgb(124, 124, 124);
+}
+
+.container .data table tr td .green {
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(2, 221, 2);
+    border-radius: 0.5rem;
+}
+
+.container .data table tr td .green:hover {
+    background-color: rgb(28, 134, 28);
+}
+
+.container .data table tr td .danger {
+    padding: 0.5rem 0.5rem;
+    background-color: tomato;
+    border-radius: 0.5rem;
+}
+
+.container .data table tr td .danger:hover {
+    background-color: rgb(156, 55, 37);
+}
+
+.container .data table tr td img {
+    width: 100px;
+    height: 130px;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.9);
+}
+
+.container .data table tr td,
+.container .data table tr th {
+    border-right: 1px solid rgb(185, 185, 185);
+}
+
+.container .data table tr td:nth-child(3) {
+    width: 180px;
+}
+
+.container .data table tr td:nth-child(4) {
+    width: 500px;
+}
+
+.container .data table tr td:nth-child(6) {
+    width: 200px;
+}
+
+/* ad_upload.php */
+
+.graphic-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    background-color: rgb(156, 156, 156);
+}
+
+.graphic-section form {
+    padding: 1rem 0rem;
+}
+
+.graphic-section form label {
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    background-color: rgb(43, 43, 43);
+}
+
+.graphic-section form input[type='submit'] {
+    margin-top: 1.5rem;
+    background-color: rgb(20, 131, 20);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem 1rem;
+    transition: 0.1s ease;
+}
+
+.graphic-section form input[type='submit']:hover {
+    cursor: pointer;
+    background-color: rgb(30, 177, 30);
+}
+
+#form-video-upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#form-video-upload #video-container button {
+    margin-top: 1.5rem;
+    background-color: rgb(197, 54, 11);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem 1rem;
+    transition: 0.1s ease;
+}
+
+#form-photo-upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#form-photo-upload #thumbnail-container button {
+    margin-top: 1.5rem;
+    background-color: rgb(197, 54, 11);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem 1rem;
+    transition: 0.1s ease;
+}
+
+#form-photo-upload #thumbnail-container img {
+    width: 500px;
+    height: 350px;
+}
+
+/* upload.php */
+
+.detail-section {
+    padding: 0rem 1rem;
+}
+
+.detail-section p {
+    padding: 0.5rem 0;
+}
+
+.detail-section p label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.detail-section input[type='text'] {
+    width: 20rem;
+    margin-left: 10rem;
+    height: 2.5rem;
+    padding: 0rem 1rem;
+}
+
+.detail-section input[type='date'] {
+    width: 20rem;
+    margin-left: 5.5rem;
+    height: 2.5rem;
+    padding: 0rem 1rem;
+}
+
+.detail-section textarea {
+    width: 20rem;
+    margin-left: 6rem;
+    height: 5.5rem;
+    padding: 0rem 1rem;
+    resize: none;
+}
+
+.detail-section select {
+    width: 20rem;
+    margin-left: 2.6rem;
+    height: 2.5rem;
+    padding: 0rem 1rem;
+}
+
+.detail-section input[type='submit'] {
+    padding: 1rem 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.detail-section input[type='submit']:hover {
+    cursor: pointer;
+    background-color: rgb(153, 58, 41);
+}
